@@ -1,0 +1,5 @@
+/Perl-Critic-Policy-TryTiny-RequireUse*
+/.build
+*.swp
+/nytprof*
+/cover_db
