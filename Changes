@@ -2,6 +2,8 @@ Revision history for Perl extension Perl::Critic::Policy::TryTiny::RequireUse.
 
 {{$NEXT}}
 
+ - Reference Perl::Critic::Policy::Dynamic::NoIndirect in SEE ALSO section.
+
 0.01 2016-06-20
 
  - First version.

@@ -97,6 +97,18 @@ use statements.
 This policy is OK if you use L<Try::Catch> or L<TryCatch> which also export the
 C<try> function.
 
+=head1 SEE ALSO
+
+=over
+
+=item *
+
+The L<Perl::Critic::Policy::Dynamic::NoIndirect> policy provides a more generic
+solution to this problem (as the author has reported to me).  Consider it as an
+alternative to this policy.
+
+=back
+
 =head1 AUTHOR
 
 Aran Clary Deltac <bluefeetE<64>gmail.com>
