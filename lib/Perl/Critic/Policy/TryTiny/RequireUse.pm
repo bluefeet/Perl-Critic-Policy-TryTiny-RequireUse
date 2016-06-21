@@ -31,9 +31,15 @@ sub violates {
             and
         defined( $_[1]->module() )
             and (
-                $_[1]->module() eq 'Try::Tiny'
+                $_[1]->module() eq 'Error'
+                    or
+                $_[1]->module() eq 'Syntax::Feature::Try'
+                    or
+                $_[1]->module() eq 'Try'
                     or
                 $_[1]->module() eq 'Try::Catch'
+                    or
+                $_[1]->module() eq 'Try::Tiny'
                     or
                 $_[1]->module() eq 'TryCatch'
             ) and
@@ -94,8 +100,8 @@ several cases of this issue in real live code and due to layers of exception han
 it had gotten lost and nobody realized that there was a bug happening due to the missing
 use statements.
 
-This policy is OK if you use L<Try::Catch> or L<TryCatch> which also export the
-C<try> function.
+This policy is OK if you use L<Error>, L<Syntax::Feature::Try>, L<Try>, L<Try::Catch>,
+and L<TryCatch> modules which also export the C<try> function.
 
 =head1 SEE ALSO
 
