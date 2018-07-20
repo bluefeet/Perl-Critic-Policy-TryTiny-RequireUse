@@ -119,6 +119,16 @@ alternative to this policy.
 
 Aran Clary Deltac <bluefeetE<64>gmail.com>
 
+=head1 CONTRIBUTORS
+
+=over
+
+=item *
+
+Graham TerMarsch <grahamE<64>howlingfrog.com>
+
+=back
+
 =head1 ACKNOWLEDGEMENTS
 
 Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
