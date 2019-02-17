@@ -1,13 +1,11 @@
-=pod
-
-=head1 NAME
+# NAME
 
 Perl::Critic::Policy::TryTiny::RequireUse - Requires that code which utilizes
 Try::Tiny actually use()es it.
 
-=head1 DESCRIPTION
+# DESCRIPTION
 
-A common problem with L<Try::Tiny> is forgetting to use the module in the first
+A common problem with [Try::Tiny](https://metacpan.org/pod/Try::Tiny) is forgetting to use the module in the first
 place.  For example:
 
     perl -e 'try { print "hello" } catch { print "world" }'
@@ -20,45 +18,31 @@ several cases of this issue in real live code and due to layers of exception han
 it had gotten lost and nobody realized that there was a bug happening due to the missing
 use statements.
 
-This policy is OK if you use L<Error>, L<Syntax::Feature::Try>, L<Try>, L<Try::Catch>,
-and L<TryCatch> modules which also export the C<try> function.
+This policy is OK if you use [Error](https://metacpan.org/pod/Error), [Syntax::Feature::Try](https://metacpan.org/pod/Syntax::Feature::Try), [Try](https://metacpan.org/pod/Try), [Try::Catch](https://metacpan.org/pod/Try::Catch),
+and [TryCatch](https://metacpan.org/pod/TryCatch) modules which also export the `try` function.
 
-=head1 SEE ALSO
+# SEE ALSO
 
-=over
-
-=item *
-
-The L<Perl::Critic::Policy::Dynamic::NoIndirect> policy provides a more generic
+- The [Perl::Critic::Policy::Dynamic::NoIndirect](https://metacpan.org/pod/Perl::Critic::Policy::Dynamic::NoIndirect) policy provides a more generic
 solution to this problem (as the author has reported to me).  Consider it as an
 alternative to this policy.
 
-=back
+# AUTHOR
 
-=head1 AUTHOR
+Aran Clary Deltac <bluefeet@gmail.com>
 
-Aran Clary Deltac <bluefeetE<64>gmail.com>
+# CONTRIBUTORS
 
-=head1 CONTRIBUTORS
+- Graham TerMarsch <graham@howlingfrog.com>
 
-=over
+# ACKNOWLEDGEMENTS
 
-=item *
-
-Graham TerMarsch <grahamE<64>howlingfrog.com>
-
-=back
-
-=head1 ACKNOWLEDGEMENTS
-
-Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
+Thanks to [ZipRecruiter](https://www.ziprecruiter.com/)
 for encouraging their employees to contribute back to the open
 source ecosystem.  Without their dedication to quality software
 development this distribution would not exist.
 
-=head1 LICENSE
+# LICENSE
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
-
-=cut
