@@ -2,6 +2,9 @@ Revision history for Perl extension Perl-Critic-Policy-TryTiny-RequireUse.
 
 {{$NEXT}}
 
+ - Require perl 5.8 per Manilla.
+ - Simplify VERSION declarations.
+
 0.04 2019-02-18T06:05:11Z
 
  - Migrate all the tests from Test::More to Test2::V0.
