@@ -1,3 +1,4 @@
+requires 'perl' => '5.008001';
 requires 'Perl::Critic' => 1.123;
 
 on test => sub {
