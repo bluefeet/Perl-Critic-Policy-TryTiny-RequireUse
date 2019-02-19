@@ -42,7 +42,8 @@
       },
       "runtime" : {
          "requires" : {
-            "Perl::Critic" : "1.123"
+            "Perl::Critic" : "1.123",
+            "perl" : "5.008001"
          }
       },
       "test" : {
