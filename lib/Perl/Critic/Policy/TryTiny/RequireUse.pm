@@ -1,9 +1,8 @@
 package Perl::Critic::Policy::TryTiny::RequireUse;
-
-our $VERSION = '0.04';
-
+use 5.008001;
 use strict;
 use warnings;
+our $VERSION = '0.04';
 
 use Readonly;
 use Perl::Critic::Utils qw{ :severities :classification :ppi };
