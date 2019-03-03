@@ -116,19 +116,10 @@ alternative to this policy.
 
 =back
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Aran Clary Deltac <bluefeetE<64>gmail.com>
-
-=head1 CONTRIBUTORS
-
-=over
-
-=item *
-
-Graham TerMarsch <grahamE<64>howlingfrog.com>
-
-=back
+    Aran Clary Deltac <bluefeet@gmail.com>
+    Graham TerMarsch <graham@howlingfrog.com>
 
 =head1 ACKNOWLEDGEMENTS
 
@@ -141,4 +132,6 @@ development this distribution would not exist.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
+
+=cut
 
